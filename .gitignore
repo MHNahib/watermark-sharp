@@ -1,0 +1,21 @@
+# Node.js ignore files
+node_modules/
+package-lock.json
+
+# Output folder
+output/
+
+# Log files
+*.log
+
+# Temp files
+*.tmp
+
+# IDE files
+.vscode/
+
+# Other ignore files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
