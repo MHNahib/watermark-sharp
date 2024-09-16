@@ -57,8 +57,9 @@ export class WatermarkGenerator {
     const { height: watermarkHeight, width: watermarkWidth } =
       await this.imagMetadata(watermark);
 
-    const left = Math.floor(width - watermarkWidth - 20);
-    const top = Math.floor(height - watermarkHeight - 20);
+    // Calculate the position of the watermark right now is 50% from the bottom and right
+    const left = Math.floor((width - watermarkWidth) * (50 / 100));
+    const top = Math.floor((height - watermarkHeight) * (50 / 100));
 
     return { left, top };
   }
